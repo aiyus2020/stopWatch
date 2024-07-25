@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="stopWatch.js"></script>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="stopwatch">
+      <h2>Stopwatch</h2>
+      <h1 id="displayTime">00:00:00</h1>
+      <div class="buttons">
+        <img src="img/stop.png" alt="Pause" onclick="pauseTime()" />
+        <img src="img/start.png" alt="Start" onclick="startWatch()" />
+        <img src="img/refresh.png" alt="Reset" onclick="resetTime()" />
+      </div>
+      <div class="footer">Created by AiyusTech</div>
+    </div>
+  </body>
+</html>

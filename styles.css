@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  background: #1e272e;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ecf0f1;
+}
+
+.stopwatch {
+  width: 90%;
+  max-width: 400px;
+  background: #2f3640;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  color: #ecf0f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.stopwatch h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stopwatch h1 {
+  font-size: 3em;
+  margin: 20px 0;
+  font-weight: 700;
+  color: #ecf0f1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.buttons img {
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.buttons img:nth-child(2) {
+  width: 70px;
+}
+.buttons img:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  font-size: 0.8em;
+  color: #bdc3c7;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .stopwatch h1 {
+    font-size: 2.5em;
+  }
+
+  .buttons img {
+    width: 40px;
+  }
+}
